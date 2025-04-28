@@ -1,0 +1,17 @@
+{
+  "name": "Lang Color Theme",
+  "type": "dark",
+  "colors": {
+    "editor.foreground": "#FFFFFF",
+    "editor.background": "#1E1E1E"
+  },
+  "tokenColors": [
+    {
+      "name": "Comments",
+      "scope": "comment.line.number-sign.lang",
+      "settings": {
+        "foreground": "#00FF00"
+      }
+    }
+  ]
+}

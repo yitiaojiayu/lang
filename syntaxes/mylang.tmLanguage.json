@@ -1,0 +1,11 @@
+{
+    "$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
+    "name": "My Lang",
+    "patterns": [
+      {
+        "name": "comment.line.number-sign.mylang",
+        "match": "^#.*"
+      }
+    ],
+    "scopeName": "source.mylang"
+  }

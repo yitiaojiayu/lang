@@ -1,10 +1,10 @@
 {
-  "name": "lang",
+  "name": "xiaojia-lang",
   "displayName": "lang",
   "description": "",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "icon": "lang.png",
-  "publisher": "yitiaojiayu",
+  "publisher": "yitiaojiayu2", 
   "repository": {
     "type": "git",
     "url": "https://github.com/yitiaojiayu/lang.git"
@@ -16,12 +16,26 @@
     "Languages"
   ],
   "activationEvents": [],
-  "main": "./dist/extension.js",
+  "main": "./extension.js",
   "contributes": {
-    "commands": [
+    "languages": [
       {
-        "command": "lang.helloWorld",
-        "title": "Hello World"
+        "id": "mylang",
+        "aliases": [
+          "My Lang",
+          "lang"
+        ],
+        "extensions": [
+          ".lang"
+        ],
+        "configuration": "./language-configuration.json"
+      }
+    ],
+    "grammars": [
+      {
+        "language": "mylang",
+        "scopeName": "source.mylang",
+        "path": "./syntaxes/mylang.tmLanguage.json"
       }
     ]
   },

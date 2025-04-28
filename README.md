@@ -1,3 +1,3 @@
-# lang README
+# for .lang
 
-'#' 注释
+'#' comment
